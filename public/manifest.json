@@ -1,0 +1,20 @@
+{
+    "name": "Counter PWA",
+    "short_name": "Counter PWA",
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "small-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "large-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

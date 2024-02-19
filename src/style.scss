@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+    height: 100vh;
+
+    font-family: sans-serif;
+}
+
+span {
+    font-size: clamp(3rem, 1.5rem + 4.8vw, 6rem);
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    gap: 2rem;
+
+    button {
+        $background-color: white;
+
+        padding: 0.5rem;
+
+        outline: none;
+        border: none;
+
+        font-size: clamp(2rem, 1rem + 3.2vw, 4rem);;
+
+        background-color: $background-color;
+
+        border-radius: 0.25rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken($background-color, 10);
+        }
+    }
+}
