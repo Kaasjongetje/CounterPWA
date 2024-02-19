@@ -105,7 +105,7 @@ I recommand saving that command as a command in vite.config
 13. Now you just need to register the serviceworker in src/main.ts
 Just note that the way how this is set up, you can't use the sw in dev mode so it'll throw an error because of that each time
 
-
+14. If you want to deploy the app, you need to deploy it from the dist folder and then everything should work. Also, you might need to remove dist from your gitignore
 
 
 
