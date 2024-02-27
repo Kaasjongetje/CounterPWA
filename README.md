@@ -4,6 +4,8 @@ How to setup a project that uses/has:
 - Sass
 - Manifest.json (to install the app)
 - Service Worker with typescript (offline app)
+(It also has an updating system that will show the user a modal
+asking to update if there is a new serviceworker, but this is not explained in here)
 
 1. Make a new repo in github
 

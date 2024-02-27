@@ -16,9 +16,12 @@ const STATIC_FILES = [
     "/large-icon.png"
 ]
 
-sw.addEventListener("install", async () => {
+sw.addEventListener("install", async (e: ExtendableEvent) => {
     const cache: Cache = await caches.open(STATIC_CACHE_NAME)
-    cache.addAll(STATIC_FILES)
+    
+    e.waitUntil(
+        cache.addAll(STATIC_FILES)
+    )
 })
 
 sw.addEventListener("fetch", async () => {
@@ -50,4 +53,10 @@ sw.addEventListener("fetch", async (e: FetchEvent) => {
     }
 
     e.respondWith(getResponse())
+})
+
+sw.addEventListener("message", (e: ExtendableMessageEvent) => {
+    if (e.data === "SKIP_WAITING") {
+        sw.skipWaiting()
+    }
 })
