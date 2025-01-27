@@ -9,7 +9,7 @@ asking to update if there is a new serviceworker, but this is not explained in h
 
 1. Make a new repo in github
 
-2. Clone the repo to your machine in the directory where you have all your repos
+2. On your computer you probably have a directory that contains coding projects. Go into that directory and make a new project folder in there with: mkdir <project_name>. Then clone the github project in there with: git clone <SSH link>. Since the git repo is empty, it won't put anything in the new folder but it will connect everything to github.
 
 3. In your repo directory (not in the cloned repo) run: npm create vite@latest <repo_name> -- --template svelte-ts
 
